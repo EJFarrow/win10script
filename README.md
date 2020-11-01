@@ -34,14 +34,14 @@ Powershell Command
 **E Farrow**<br>
 
 *Added*
-- [] App : Chrome
+- [ ] App : Chrome
 - [x] App : VS CODE
-- [] App : XAMPP
-- [] App : GeForce Experience
-- [] App : Steam
-- [] App : Origin
-- [] App : UPlay
-- [] App : OBS Studio
+- [ ] App : XAMPP
+- [ ] App : GeForce Experience
+- [ ] App : Steam
+- [ ] App : Origin
+- [ ] App : UPlay
+- [ ] App : OBS Studio
 
 *Removed*
 - [x] App : Adobe Reader
