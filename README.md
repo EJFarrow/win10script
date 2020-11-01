@@ -3,11 +3,8 @@ This is a setup script using multiple scripts on github.
 
 ## One Link Install
 ```
-New Install
-> powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JU1ML')"
-
-Debloat
-> powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUymF')"
+Powershell Command
+> iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JTQH8'))
 ```
 
 ## Edits Made
