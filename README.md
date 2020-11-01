@@ -1,30 +1,52 @@
-# win10script
-This is the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine.
+# Windows 10 Setup
+This is a setup script using multiple scripts on github.
 
-## My Additions
-
-- Dark Mode
-- One Command to launch and run
-- Chocolatey Install
-- O&O Shutup10 CFG and Run
-- Added Install Programs
-- Added Debloat Microsoft Store Apps
-
-## Modifications
-I encourage people to fork this project and comment out things they don't like! Here is a list of normal things people change:
-- Uninstalling OneDrive (This is on in my script)
-- Installing Adobe, Chocolatey, Notepad++, MPC-HC, and 7-Zip
-
-Comment any thing you don't want out... Example:
-
+## One Link Install
 ```
-########## NOTE THE # SIGNS! These disable lines This example shows UACLow being set and Disabling SMB1
-### Security Tweaks ###
-	"SetUACLow",                  # "SetUACHigh",
-	"DisableSMB1",                # "EnableSMB1",
+New Install
+> powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JU1ML')"
 
-########## NOW LETS SWAP THESE VALUES AND ENABLE SMB1 and Set UAC to HIGH
-### Security Tweaks ###
-	"SetUACHigh",
-	"EnableSMB1",
+Debloat
+> powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUymF')"
 ```
+
+## Edits Made
+
+**Disassembler [(Link)](https://github.com/Disassembler0/Win10-Initial-Setup-Script)**<br>
+
+- [x] Initial Script
+
+**Alirobe [(Link)](https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/)**<br>
+
+- [x] Compacted Script
+
+**Chris Titus [(Link)](https://github.com/ChrisTitusTech/win10script/)**<br>
+
+*Added*
+- [x] Dark Mode
+- [x] One Command to launch and run
+- [x] Package Manager : Chocolatey Package
+- [x] O&O Shutup10 CFG and Run
+- [x] App : 7Zip
+- [x] App : Adobe Reader
+- [x] App : Notepad ++
+- [x] App : VLC Media Player
+- [x] Added Debloat Microsoft Store Apps
+
+
+**E Farrow**<br>
+
+*Added*
+- [] App : Chrome
+- [x] App : VS CODE
+- [] App : XAMPP
+- [] App : GeForce Experience
+- [] App : Steam
+- [] App : Origin
+- [] App : UPlay
+- [] App : OBS Studio
+
+*Removed*
+- [x] App : Adobe Reader
+- [x] App : Notepad ++
+- [x] App : VLC Media Player
