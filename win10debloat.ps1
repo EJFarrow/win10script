@@ -19,7 +19,7 @@
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
 #	- Added Confirm Menu for Adobe and Brave Browser
-#	- Changed Default Apps to Notepad++, Brave, Irfanview, and more using XML Import feature
+#	- Changed Default Apps using XML Import feature
 #
 ##########
 # Default preset
@@ -32,11 +32,7 @@ $tweaks = @(
 	"TitusRegistryTweaks",
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
-	"InstallNotepadplusplus",
-	"InstallIrfanview",
 	"InstallVLC",
-	"InstallAdobe",
-	"InstallBrave",
 	"ChangeDefaultApps",
 
 	### Windows Apps
@@ -244,47 +240,17 @@ Function InstallTitusProgs {
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
-
-Function InstallAdobe {
-	Show-Choco-Menu -Title "Do you want to install Adobe Acrobat Reader?" -ChocoInstall "adobereader"
-}
-
-Function InstallBrave {
-	do
- {
-    Clear-Host
-    Write-Host "================ Do You Want to Install Brave Browser? ================"
-    Write-Host "Y: Press 'Y' to do this."
-    Write-Host "2: Press 'N' to skip this."
-	Write-Host "Q: Press 'Q' to stop the entire script."
-    $selection = Read-Host "Please make a selection"
-    switch ($selection)
-    {
-    'y' { 
-		Invoke-WebRequest -Uri "https://laptop-updates.brave.com/download/CHR253" -OutFile $env:USERPROFILE\Downloads\brave.exe
-		~/Downloads/brave.exe
-	}
-    'n' { Break }
-    'q' { Exit  }
-    }
- }
  until ($selection -match "y" -or $selection -match "n" -or $selection -match "q")
 	
 }
 Function Install7Zip {
 	Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
 }
-
-Function InstallNotepadplusplus {
-	Show-Choco-Menu -Title "Do you want to install Notepad++?" -ChocoInstall "notepadplusplus"
-}
-
 Function InstallVLC {
 	Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vlc"
 }
-
-Function InstallIrfanview {
-	Show-Choco-Menu -Title "Do you want to install Irfanview?" -ChocoInstall "irfanview"
+Function InstallVSCode {
+	Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vscode"
 }
 
 Function ChangeDefaultApps {
