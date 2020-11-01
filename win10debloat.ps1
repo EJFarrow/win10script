@@ -33,6 +33,7 @@ $tweaks = @(
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
 	"InstallVLC",
+	"InstallVSCode",
 	"ChangeDefaultApps",
 
 	### Windows Apps
@@ -250,7 +251,7 @@ Function InstallVLC {
 	Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vlc"
 }
 Function InstallVSCode {
-	Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vscode"
+	Show-Choco-Menu -Title "Do you want to install VS Code?" -ChocoInstall "vscode"
 }
 
 Function ChangeDefaultApps {
